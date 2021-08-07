@@ -16,12 +16,6 @@ namespace QNA.Models
         [DisplayName("Question")]
         public string QuestionName { get; set; }
 
-        [DisplayName("Views")]
-        public int views { get; set; }
-
-        [DisplayName("Last Updated")]
-        public DateTime QuestionDateAndTime { get; set; }
-
         [DisplayName("Category ID")]
         public int CategoryId { get; set; }
 

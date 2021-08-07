@@ -20,10 +20,18 @@ namespace QNA.Models
         public string AnswerText { get; set; }
 
         [DisplayName("Last Updated")]
-        public DateTime AnswerDateAndTime { get; set; }
+        public DateTime AnswerDateAndTime { get; set; }  = DateTime.Now;
 
         [DisplayName("Posted By")]
         public String name { get; set; }
+
+        [DisplayName("UpVote")]
+        [DefaultValue(0)]
+        public int? UpVote { get; set; }
+
+        [DisplayName("Down Vote")]
+        [DefaultValue(0)]
+        public int? DownVote { get; set; }
 
         public virtual Question Question { get; set; }
     }
